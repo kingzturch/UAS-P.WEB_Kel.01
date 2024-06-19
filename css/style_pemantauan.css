@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #34495e;
+}
+
+.table-container {
+    width: 90%;
+    margin: 50px auto;
+    background: #191919;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+.table-container h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.bubble-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #01939c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.bubble-button:hover {
+    background-color: #017d85;
+}
+
+.download-buttons {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.download-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #27ae60;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 5px;
+}
+
+.download-button:hover {
+    background-color: #219150;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 16px;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    color: rgb(54, 158, 218);
+}
+
+th {
+    background-color: #01939c;
+    color: white;
+}
+
+tr:hover {
+    background-color: #333;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    color: rgb(44, 134, 47) !important;
+    border: 1px solid #01939c;
+    background-color: #01939c;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 0 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: #017d85;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: #27ae60 !important;
+    border: 1px solid #27ae60;
+}
+
+.dataTables_wrapper .dataTables_length select,
+.dataTables_wrapper .dataTables_filter input {
+    color: #333;
+    background-color: rgb(53, 116, 188);
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.dataTables_wrapper .dataTables_length select:focus,
+.dataTables_wrapper .dataTables_filter input:focus {
+    border-color: #01939c;
+}
+
+.dataTables_wrapper .dataTables_info {
+    color: rgb(50, 178, 163);
+    margin-top: 10px;
+}
+
+.actions {
+    display: flex;
+    gap: 5px;
+}
+
+.action-icon {
+    text-decoration: none;
+    color: #1e90ff;
+    cursor: pointer;
+}
+
+.action-icon:hover {
+    color: #1c7ccc;
+}
+
+.action-icon.edit-btn {
+    color: #ff9800;
+}
+
+.action-icon.edit-btn:hover {
+    color: #e68900;
+}
+
+.action-icon.delete-btn {
+    color: #f44336;
+}
+
+.action-icon.delete-btn:hover {
+    color: #d32f2f;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.delete-button,
+.cancel-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+.cancel-button {
+    background-color: #777;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #555;
+}
+
+
+/* Styling for DataTables search box */
+
+.dataTables_wrapper .dataTables_filter {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.dataTables_wrapper .dataTables_filter label {
+    color: white;
+    /* Text color for the label */
+    font-size: 16px;
+    /* Font size for the label */
+    font-weight: bold;
+    /* Font weight for the label */
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    color: #feffff;
+    /* Text color for the input */
+    background-color: white;
+    /* Background color for the input */
+    border: 1px solid #ccc;
+    /* Border color for the input */
+    padding: 5px;
+    /* Padding inside the input */
+    border-radius: 3px;
+    /* Rounded corners for the input */
+    margin-left: 10px;
+    /* Space between label and input */
+    font-size: 16px;
+    /* Font size for the input */
+    transition: border-color 0.3s ease;
+    /* Smooth transition for border color */
+}
+
+.dataTables_wrapper .dataTables_filter input:focus {
+    border-color: #01939c;
+    /* Border color when input is focused */
+    outline: none;
+    /* Remove default outline */
+}
+
+
+/* Styling for search input placeholder */
+
+.dataTables_wrapper .dataTables_filter input::placeholder {
+    color: #aaa;
+    /* Placeholder text color */
+    font-style: italic;
+    /* Placeholder text style */
+}
